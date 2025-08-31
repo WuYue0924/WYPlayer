@@ -42,9 +42,9 @@ CUDA_SOURCES += ColorSpace.cu
 cuda.input = CUDA_SOURCES
 cuda.output = ${QMAKE_FILE_BASE}.o
 CONFIG(release, debug|release): {
-    cuda.commands = nvcc -c \"C:/Users/WuYue/Desktop/qt_cuda_freeglut/ColorSpace.cu\" -o \"ColorSpace.o\" -Xcompiler "/MD" -I\"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/include\"
+    cuda.commands = nvcc -c \"../../ColorSpace.cu\" -o \"ColorSpace.o\" -Xcompiler "/MD" -I\"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/include\"
 } else {
-    cuda.commands = nvcc -c \"C:/Users/WuYue/Desktop/qt_cuda_freeglut/ColorSpace.cu\" -o \"ColorSpace.o\" -Xcompiler "/MDd" -I\"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/include\"
+    cuda.commands = nvcc -c \"../../ColorSpace.cu\" -o \"ColorSpace.o\" -Xcompiler "/MDd" -I\"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/include\"
 }
 cuda.dependency_type = TYPE_C
 QMAKE_EXTRA_COMPILERS += cuda
