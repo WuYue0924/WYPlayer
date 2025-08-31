@@ -1,2 +1,3 @@
 qt_dxva2/build/
 qt_d3d11/build/
+qt_cuda_freeglut/build/
